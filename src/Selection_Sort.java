@@ -38,80 +38,80 @@ public class Selection_Sort {
 // In C++.................................
 
 
- #include <iostream>
- using namespace std;
- void Sel_Sort(int arr[],int n)
- {
-      for(int i=0;i<n;i++)
-      {
-          for(int j=i+1;j<n;j++)
-          {
-              if(arr[i]>arr[j])
-              {
-                 int temp = arr[j];
-                 arr[j] = arr[i];
-                 arr[i] = temp;
-              }
-          }
-      }
- }
- void Print(int arr[],int n)
- {
-     for(int i=0;i<n;i++)
-     {
-         cout<<arr[i]<<" ";
-     }
- }
- int main()
- {
-     int n;
-     cin>>n;
-     int arr[n];
-     for (int i = 0; i < n; i++) {
-         cin>>arr[i];
-     }
-     Sel_Sort(arr,n);
-     Print(arr,n);
-
-     return 0;
- }
-
- // In C...........................
-
-
- #include <stdio.h>
- void Sel_Sort(int arr[],int n)
- {
-      for(int i=0;i<n;i++)
-      {
-          for(int j=i+1;j<n;j++)
-          {
-              if(arr[i]>arr[j])
-              {
-                 int temp = arr[j];
-                 arr[j] = arr[i];
-                 arr[i] = temp;
-              }
-          }
-      }
- }
- void Print(int arr[],int n)
- {
-     for(int i=0;i<n;i++)
-     {
-         printf("%d ",arr[i]);
-     }
- }
- int main()
- {
-     int n;
-     scanf("%d",&n);
-     int arr[n];
-     for (int i = 0; i < n; i++) {
-         scanf("%d",&arr[i]);
-     }
-     Sel_Sort(arr,n);
-     Print(arr,n);
-
-     return 0;
- }
+// #include <iostream>
+// using namespace std;
+// void Sel_Sort(int arr[],int n)
+// {
+//      for(int i=0;i<n;i++)
+//      {
+//          for(int j=i+1;j<n;j++)
+//          {
+//              if(arr[i]>arr[j])
+//              {
+//                 int temp = arr[j];
+//                 arr[j] = arr[i];
+//                 arr[i] = temp;
+//              }
+//          }
+//      }
+// }
+// void Print(int arr[],int n)
+// {
+//     for(int i=0;i<n;i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for (int i = 0; i < n; i++) {
+//         cin>>arr[i];
+//     }
+//     Sel_Sort(arr,n);
+//     Print(arr,n);
+//
+//     return 0;
+// }
+//
+// // In C...........................
+//
+//
+// #include <stdio.h>
+// void Sel_Sort(int arr[],int n)
+// {
+//      for(int i=0;i<n;i++)
+//      {
+//          for(int j=i+1;j<n;j++)
+//          {
+//              if(arr[i]>arr[j])
+//              {
+//                 int temp = arr[j];
+//                 arr[j] = arr[i];
+//                 arr[i] = temp;
+//              }
+//          }
+//      }
+// }
+// void Print(int arr[],int n)
+// {
+//     for(int i=0;i<n;i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     Sel_Sort(arr,n);
+//     Print(arr,n);
+//
+//     return 0;
+// }
